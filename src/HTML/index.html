@@ -1,12 +1,49 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="fr-CA">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title></title>
-  </head>
-    <p>Techno</p>
-  <body>
+    <title>Techno Pieux</title>
 
-  </body>
+    <!-- Metro UI STYLES AND JS -->
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="../JS/login.js"></script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login centered">
+        <h1>Se connecter</h1>
+        <p>
+            Connectez-vous
+        </p>
+
+        <div class="input-control text">
+            <input type="text" id="login-email" placeholder="Courriel">
+        </div>
+
+        <div class="input-control password">
+            <input type="password" id="login-password" placeholder="Mot de passe">
+        </div>
+
+        <label style="float:right" class="switch">
+            <input type="checkbox" id="login-password-switch">
+            <span class="check"></span>
+        </label>
+
+        <br />
+
+        <hr />
+        <button class="button primary" id="btn-next" style="float: right;">Suivant</button>
+    </div>
+</body>
+
 </html>

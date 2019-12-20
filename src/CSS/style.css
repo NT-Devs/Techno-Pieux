@@ -1,0 +1,42 @@
+body {
+    margin: auto;
+    background-color: white;
+    background-image: url(../img/forest-2942477.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.login {
+    padding: 3em;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0.1em;
+    box-shadow: 0px 0px 3em #282828;
+    width: 30em;
+    height: 24em;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+@media screen and (max-width: 576px), (max-height: 576px) {
+    .centered {
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .login {
+        width: 100vw;
+        height: 100vh;
+    }
+}
