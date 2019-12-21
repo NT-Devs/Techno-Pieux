@@ -2,7 +2,7 @@ $(document).ready(function () {
     
 
     $('#btn-next').click(function () {
-        console.log("Hello!");
+        
     });
 
     $("#login-password-switch").on('change', function () {

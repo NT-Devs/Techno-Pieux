@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
 
     <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css" />
     <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
 
     <!-- JS -->
@@ -21,34 +22,35 @@
 
 <body>
     <form class="login centered" action="form.html">
-        <h1>Se connecter</h1>
-        <p>
-            Connectez-vous
-        </p>
+        <div class="login-content">
+            <h1>Se connecter</h1>
+            <p>
+                Connectez-vous
+            </p>
 
-        <!-- MAIL -->
-        <div class="input-control text">
-            <input type="text" id="login-email" placeholder="Courriel">
+            <!-- MAIL -->
+            <div class="input-control text">
+                <input type="text" id="login-email" placeholder="Courriel">
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="input-control password">
+                <input type="password" id="login-password" placeholder="Mot de passe">
+            </div>
+
+            <!-- SWITCH TO HIDE PASSWORD -->
+            <label style="float:right" class="switch">
+                <input type="checkbox" id="login-password-switch">
+                <span class="check"></span>
+            </label>
+
+            <br />
+
+            <hr />
+
+            <!-- SUBMIT BUTTON -->
+            <input type="submit" class="button primary" id="btn-next" style="float: right;" value="Suivant">
         </div>
-
-        <!-- PASSWORD -->
-        <div class="input-control password">
-            <input type="password" id="login-password" placeholder="Mot de passe">
-        </div>
-
-        <!-- SWITCH TO HIDE PASSWORD -->
-        <label style="float:right" class="switch">
-            <input type="checkbox" id="login-password-switch">
-            <span class="check"></span>
-        </label>
-
-        <br />
-
-        <hr />
-
-        <!-- SUBMIT BUTTON -->
-        <input type="submit" class="button primary" id="btn-next" style="float: right;" value="Suivant">
-
     </form>
 </body>
 

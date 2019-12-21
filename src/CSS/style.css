@@ -7,6 +7,7 @@ body {
 }
 
 .login {
+    margin: auto;
     padding: 3em;
     background-color: white;
     border: 1px solid #ccc;
@@ -17,17 +18,20 @@ body {
 }
 
 .main_form {
-  padding: 3em;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 0.1em;
-  box-shadow: 0px 0px 3em #282828;
-  width: 70em;
-  height: 100%;
+    margin: auto;
+    margin-top: 8em;
+    margin-bottom: 4em;
+    padding: 3em;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0.1em;
+    box-shadow: 0px 0px 3em #282828;
+    width: 70em;
+    height: 100%;
 }
 
 .text_center {
-  text-align: center;
+    text-align: center;
 }
 
 .centered {
@@ -38,18 +42,17 @@ body {
 }
 
 main_form_input {
-  col
 }
 
-p, label, legend{
+p, label, legend {
     font-family: 'Montserrat', sans-serif;
     color: black;
+    border: 1px solid #ccc;
 }
 
-
-
-@media screen and (max-width: 576px), (max-height: 576px) {
-    .centered {
+/*Rend le login responsive*/
+@media screen and (max-width: 576px), (max-height: 450px) {
+    .login > .centered {
         top: 0;
         left: 0;
         transform: none;
@@ -58,5 +61,24 @@ p, label, legend{
     .login {
         width: 100vw;
         height: 100vh;
+    }
+
+    .login-content {
+        width: 25em;
+        margin: auto;
+    }
+}
+
+/*Rend le main_form responsive*/
+@media screen and (max-width: 1200px) {
+    .main_form {
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+    }
+
+    .main_form-content {
+        margin: auto;
+        width: 40em;
     }
 }
