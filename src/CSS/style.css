@@ -16,6 +16,20 @@ body {
     height: 24em;
 }
 
+.main_form {
+  padding: 3em;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0.1em;
+  box-shadow: 0px 0px 3em #282828;
+  width: 70em;
+  height: 100%;
+}
+
+.text_center {
+  text-align: center;
+}
+
 .centered {
     position: fixed;
     top: 50%;
@@ -23,10 +37,16 @@ body {
     transform: translate(-50%, -50%);
 }
 
-p {
+main_form_input {
+  col
+}
+
+p, label, legend{
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
+
+
 
 @media screen and (max-width: 576px), (max-height: 576px) {
     .centered {
