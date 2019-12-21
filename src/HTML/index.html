@@ -3,7 +3,7 @@
 <html lang="fr-CA">
 <head>
     <meta charset="utf-8">
-    <title>Techno Pieux</title>
+    <title>Se connecter</title>
 
     <!-- Metro UI STYLES AND JS -->
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
@@ -20,20 +20,23 @@
 </head>
 
 <body>
-    <div class="login centered">
+    <form class="login centered" action="form.html">
         <h1>Se connecter</h1>
         <p>
             Connectez-vous
         </p>
 
+        <!-- MAIL -->
         <div class="input-control text">
             <input type="text" id="login-email" placeholder="Courriel">
         </div>
 
+        <!-- PASSWORD -->
         <div class="input-control password">
             <input type="password" id="login-password" placeholder="Mot de passe">
         </div>
 
+        <!-- SWITCH TO HIDE PASSWORD -->
         <label style="float:right" class="switch">
             <input type="checkbox" id="login-password-switch">
             <span class="check"></span>
@@ -42,8 +45,11 @@
         <br />
 
         <hr />
-        <button class="button primary" id="btn-next" style="float: right;">Suivant</button>
-    </div>
+
+        <!-- SUBMIT BUTTON -->
+        <input type="submit" class="button primary" id="btn-next" style="float: right;" value="Suivant">
+
+    </form>
 </body>
 
 </html>
