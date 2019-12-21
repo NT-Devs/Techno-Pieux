@@ -21,61 +21,52 @@
 
 <body>
     <form class="main_form">
-        <div class="main_form-content">
-            <h1 class="text_center"> Travaux à réaliser</h1>
+        <h1 class="text_center"> Travaux à réaliser</h1>
 
-            <div>
+        <div id="main_form-fields">
+            <div class="main_form_input">
                 <label for="compagnie">Nom du client ou Compagnie <span style="color: red">*</span></label>
                 <input type="text">
             </div>
 
-            <div>
+            <div class="main_form_input">
                 <label for="reprenter">Représenté par <span style="color: red">*</span></label>
                 <input type="text">
             </div>
 
-            <br />
-            <hr />
-
-            <div>
+            <div class="main_form_input">
                 <label for="adresse">Endroit des travaux <span style="color: red">*</span></label>
                 <input type="text">
             </div>
 
-            <div>
+            <div class="main_form_input">
                 <label for="facturation">Adresse de facturation</label>
                 <input type="text">
             </div>
 
-            <div>
+            <div class="main_form_input">
                 <label for="telephone">Téléphone <span style="color: red">*</span></label>
                 <input type="text">
             </div>
 
-            <div>
+            <div class="main_form_input">
                 <label for="courriel">Courriel</label>
                 <input type="text">
             </div>
 
-            <br />
-            <hr />
-
-            <div>
+            <div class="main_form_input">
                 <label for="quantite">Quantité de pieux <span style="color: red">*</span></label>
                 <input type="text">
             </div>
 
-            <div>
+            <div class="main_form_input">
                 <label for="prix_unite">Prix à l'unité <span style="color: red">*</span></label>
                 <input type="text">
             </div>
 
-            <br />
-            <hr />
-
             <!-- PLAQUE DE SUPPORT -->
 
-            <div>
+            <div class="main_form_input">
                 <label for="plaque">Plaque de support</label>
                 <select name="plaque">
                     <option value="CA1-4G">CA1-4G</option>
@@ -99,7 +90,7 @@
 
             <!-- TYPE DE RALLONGE -->
 
-            <div>
+            <div class="main_form_input">
                 <label for="plaque">Type de rallonge</label>
                 <select name="rallonge">
                     <option value="R1-G">R1-G</option>
@@ -107,91 +98,80 @@
                     <option value="R3-G">R3-G</option>
                 </select>
             </div>
+        </div>
 
-            <br />
-            <hr />
+        <br />
+        <hr />
 
-            <fieldset>
+        <div id="main_form-checkboxes">
+            <fieldset class="main_form_input">
                 <legend>Implantation fait :</legend>
                 <div>
                     <input type="checkbox" id="coding" name="interest" value="coding">
                     <label for="coding">Oui</label>
                 </div>
-                <div>
-                    <input type="checkbox" id="music" name="interest" value="music">
-                    <label for="music">Non</label>
-                </div>
             </fieldset>
 
-            <fieldset>
-                <legend>Présence de fils ou tuyau sous-terrain:</legend>
+            <fieldset class="main_form_input">
+                <legend>Présence de fils ou tuyau sous-terrain :</legend>
                 <div>
                     <input type="checkbox" id="coding" name="interest" value="coding">
                     <label for="coding">Oui</label>
                 </div>
-                <div>
-                    <input type="checkbox" id="music" name="interest" value="music">
-                    <label for="music">Non</label>
-                </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="main_form_input">
                 <legend>Besoin de soudeuse :</legend>
                 <div>
                     <input type="checkbox" id="coding" name="interest" value="coding">
                     <label for="coding">Oui</label>
                 </div>
-                <div>
-                    <input type="checkbox" id="music" name="interest" value="music">
-                    <label for="music">Non</label>
-                </div>
             </fieldset>
-
-            <!-- TABLE  -->
-            <!--
-            <table style="border: 1px solid black;">
-              <thead>
-                <tr>
-                    <th>Dimension</th>
-                    <th colspan="2">Existant</th>
-                    <th>OUI</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Balcon avec toiture</td>
-                  <td><input type="checkbox"></td>
-
-                </tr>
-                <tr>
-                  <td>Sans toiture</td>
-                </tr>
-                <tr>
-                  <td>Verrière, Veranda</td>
-                </tr>
-                <tr>
-                  <td>Gazebo</td>
-                </tr>
-                <tr>
-                  <td>Spa</td>
-                </tr>
-                <tr>
-                  <td>Agrandissement</td>
-                </tr>
-                <tr>
-                  <td>Clôture</td>
-                </tr>
-              </tbody>
-            </table>
-            -->
-
-            <br />
-
-            <hr />
-
-            <input type="submit" class="button primary" id="btn-save" style="float: right;" value="Enregistrer" />
-            <input type="submit" class="button secondary" id="ntn-erase" value="Tout effacer" />
         </div>
+
+        <!-- TABLE  -->
+        <!--
+        <table style="border: 1px solid black;">
+          <thead>
+            <tr>
+                <th>Dimension</th>
+                <th colspan="2">Existant</th>
+                <th>OUI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Balcon avec toiture</td>
+              <td><input type="checkbox"></td>
+
+            </tr>
+            <tr>
+              <td>Sans toiture</td>
+            </tr>
+            <tr>
+              <td>Verrière, Veranda</td>
+            </tr>
+            <tr>
+              <td>Gazebo</td>
+            </tr>
+            <tr>
+              <td>Spa</td>
+            </tr>
+            <tr>
+              <td>Agrandissement</td>
+            </tr>
+            <tr>
+              <td>Clôture</td>
+            </tr>
+          </tbody>
+        </table>
+        -->
+
+        <br />
+        <hr />
+
+        <input type="submit" class="button primary" id="btn-save" style="float: right;" value="Enregistrer" />
+        <input type="submit" class="button secondary" id="ntn-erase" value="Tout effacer" />
     </form>
 </body>
 </html>

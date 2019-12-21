@@ -19,15 +19,25 @@ body {
 
 .main_form {
     margin: auto;
-    margin-top: 8em;
+    margin-top: 4em;
     margin-bottom: 4em;
     padding: 3em;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 0.1em;
     box-shadow: 0px 0px 3em #282828;
-    width: 70em;
+    width: 90%;
     height: 100%;
+}
+
+#main_form-fields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#main_form-checkboxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .text_center {
@@ -41,13 +51,14 @@ body {
     transform: translate(-50%, -50%);
 }
 
-main_form_input {
+.main_form_input {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 p, label, legend {
     font-family: 'Montserrat', sans-serif;
     color: black;
-    border: 1px solid #ccc;
 }
 
 /*Rend le login responsive*/
@@ -69,7 +80,7 @@ p, label, legend {
     }
 }
 
-/*Rend le main_form responsive*/
+/*Rend le main_form responsive*/    /*Grands*/
 @media screen and (max-width: 1200px) {
     .main_form {
         width: 100vw;
@@ -77,8 +88,35 @@ p, label, legend {
         margin: 0;
     }
 
-    .main_form-content {
-        margin: auto;
-        width: 40em;
+    #main_form-checkboxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #main_form-fields {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*Rend le main_form responsive*/ /*Moyens*/
+@media screen and (max-width: 992px)
+{
+    #main_form-checkboxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*Rend le main_form responsive*/ /*Petits*/
+@media screen and (max-width: 768px)
+{
+    #main_form-checkboxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*Rend le main_form responsive*/ /*Ultra small*/
+@media screen and (max-width: 576px)
+{
+    #main_form-fields {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
